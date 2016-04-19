@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+   <script>
+       var cadi = {
+           color: "tan",
+           model: "MG Cadillac",
+           year: 1955,
+           passengers: 5,
+           convertible: false,
+           mileage: 12892
+       };
+       cadi.color = "red";
+       cadi.washing = true;
+       if(cadi.year>1950){
+         cadi.classic = true;
+       }
+       delete cadi.convertible;
+       console.log(cadi);
+       function  prequal(car){
+           if(car.year>1960){
+               return false;
+           }
+           else if(car.mileage > 15000){
+               return false;
+           }return true;
+       }
+       var proverka = prequal(cadi);
+       console.log(proverka);
+
+
+       var fido = {
+           name : "Fido",
+           weight : 48,
+           breed : "Mixed",
+           lovers : "walks"
+       }
+       function loseWeight(dog,amount){
+           dog.weight = dog.weight - amount;
+       }
+       loseWeight(fido, 15);
+       alert(fido.name + " now weight " + fido.weight);
+   </script>
+</head>
+<body>
+
+</body>
+</html>

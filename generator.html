@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phrase generator</title>
+    <script>
+        function makePhrase(){
+
+            var world1=["24/7", "multi-tier", "30,000 foot", "B-to-B", "win-win"];
+            var world2=["empowered", "value-added", "oriented", "focused", "aligned"];
+            var world3=["process", "solution", "tipping-point", "strategy", "vision"];
+
+            var rand1=Math.floor(Math.random()*world1.length);
+            var rand2=Math.floor(Math.random()*world2.length);
+            var rand3=Math.floor(Math.random()*world3.length);
+
+            var phrese =world1[rand1]+' ' + world2[rand2]+' ' + world3[rand3];
+            alert(phrese)
+        }
+        makePhrase();
+    </script>
+</head>
+<body>
+</body>
+</html>

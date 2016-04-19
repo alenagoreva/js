@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var fiat = {
+            make: "Fiat",
+            model: "500",
+            year: 1957,
+            color: "Medium Blue",
+            passengers: 2,
+            convertible: false,
+            mileage: 88000,
+            started:false,             //двигатель не запущен
+            start: function() {
+                this.started = true;
+            },
+            stop: function() {               //В JavaScript существует ключевое слово this,
+                        this.started = false;        // которое предназначено именно для этой цели: оно обозначает текущий
+                           },                    // объект, с которым мы работаем.
+
+            drive:function(){
+                if(this.started == true){
+             alert("Zoom - zoom!");
+             }else{
+                    alert("You need to start the engine first.");
+                }}
+        };
+        fiat.drive();
+        fiat.start();
+        fiat.drive();
+        fiat.stop();
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>
