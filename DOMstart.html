@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Green Planet</title>
+    <style>
+        .redtext{
+            color: red;
+        }
+    </style>
+    <script>
+      function init(){
+          var planet = document.getElementById("greenplanet");//обновление текста
+           planet.innerHTML = "Red Alert: hit by phaser fire!";//меняет содержимое элемента
+           console.log(planet.innerHTML);
+          planet.setAttribute("class", "redtext"); //задание атрибута
+      }
+
+          window.onload = init; // код выполнится после загрузки страницы
+
+
+    </script>
 </head>
 <body>
+<h1>Green planet</h1>
 <p id="greenplanet" class="test" > All is well </p>
+<h1>Red planet</h1>
  <p id="redplanet" > Nothing to report </p>
+<h1>Blue planet</h1>
  <p id="blueplanet" > All system A-OK </p>
 
-<script>
-    var planet = document.getElementById("greenplanet");//обновление текста
-    planet.innerHTML = "Red Alert: hit by phaser fire!"; //меняет содержимое элемента
-</script>
+
 </body>
 </html>
